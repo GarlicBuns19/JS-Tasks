@@ -1,16 +1,15 @@
-let minute = document.querySelector('#minute');
-let seconds = document.getElementById('seconds');
-
 let calculate = document.getElementById('calculate');
 let c = calculate;
 
 c.addEventListener('click',() => {
-    let m = minute.value;
-    let s = seconds.value;
+    let minute = document.querySelector('#minute').value;
+    // let seconds = document.getElementById('seconds').value;
+    let m = minute;
+    // let s = seconds;
 
-    answer = eval(m * 60)
+    answer = eval(m*60)
     document.getElementById('output').innerHTML = answer;
-    answer = eval((m*60)+s)
-    document.getElementById('output').innerHTML = answer;
+    // answer = eval((m*60)+parseInt(s))
+    // document.getElementById('output').innerHTML = answer;
 })
 
