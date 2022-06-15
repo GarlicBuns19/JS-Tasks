@@ -10,5 +10,7 @@ c.addEventListener('click',() => {
 
     answer = eval(m * 60)
     document.getElementById('output').innerHTML = answer;
+    answer = eval((m*60)+s)
+    document.getElementById('output').innerHTML = answer;
 })
 
