@@ -9,3 +9,14 @@ calculate.addEventListener('click',() => {
     let r = parseInt(mx - m);
     document.getElementById('range').innerHTML = r;
 })
+
+// let meanNumbers = document.getElementById('meanNumbers');
+// let calculateMean = document.getElementById('calculateMean');
+
+// calculateMean.addEventListener('click',() => {
+//     let mN = meanNumbers [''];
+    
+//     const average = arr.reduce((a, b) => a + b, 0) / arr.length;
+
+//     document.getElementById('mean').innerHTML = average;
+// })
