@@ -11,15 +11,15 @@ btnaddNum.addEventListener('click', () => {
     if(i >= 1){
         numsToCal.innerHTML += ', '
     }
-
     numsToCal.innerHTML += arr[i]
+    numbers.value = ''
+    i++;
 })
 
+// Press enter
 numbers.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
-        // Cancel the default action, if needed
         event.preventDefault();
-        // Trigger the button element with a click
         btnaddNum.click();
     }
 })
@@ -35,3 +35,16 @@ btnCal.addEventListener('click', (sum) => {
     }
     answer.innerHTML = sum
 })
+
+// Reset
+const btnReset = document.getElementById('reset')
+btnReset.addEventListener('click', () => {
+    numbers.innerHTML = ''
+    numsToCal.innerHTML = ''
+    answer.innerHTML = ''
+    arr
+})
+
+let copy = document.getElementById('copyright')
+let date = new Date().getFullYear();
+copy.innerHTML = '&copy Raees ' + date
