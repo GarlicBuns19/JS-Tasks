@@ -16,3 +16,16 @@ btnAdd.addEventListener('click' , (x) => {
     document.getElementById('arr').value = '';
     document.getElementById('arr').focus();
 })
+
+// Min Max Calculation
+const minx = document.getElementById('min')
+const maxx = document.getElementById('max')
+const cal = document.getElementById('cal')
+
+cal.addEventListener('click' , (min,max) => {
+    min = Math.min(...arr)
+    minx.innerHTML = min + 'lowest';
+
+    max = Math.max(...arr)
+    maxx.innerHTML = max + 'highest';
+})
