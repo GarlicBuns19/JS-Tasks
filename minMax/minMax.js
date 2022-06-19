@@ -14,5 +14,5 @@ btnAdd.addEventListener('click' , (x) => {
     array.innerHTML += arr[i] ;
     i++;
     document.getElementById('arr').value = '';
-    document.getElementById('arr').focus()
+    document.getElementById('arr').focus();
 })
