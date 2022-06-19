@@ -11,4 +11,8 @@ btnConvert.addEventListener('click',() => {
     let bc= parseInt(b.value)
     let answer = rc.toString(16) + gc.toString(16) + bc.toString(16)
     hex.innerHTML = '#' + answer
+
+    let color = '#' + answer
+    document.getElementById('hexbg').innerHTML = 'The color'
+    document.getElementById('hexbg').style = `background-color: ${color} ;`
 })
