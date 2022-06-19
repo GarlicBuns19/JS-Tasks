@@ -1,19 +1,14 @@
-const r = document.getElementById('red').value
-const g = document.getElementById('green').value
-const b = document.getElementById('blue').value
+const r = document.getElementById('red')
+const g = document.getElementById('green')
+const b = document.getElementById('blue')
 const hex = document.getElementById('hex')
 
 const btnConvert = document.getElementById('convert')
 
-btnConvert.addEventListener('click',() => { 
-    function componentToHex(c) {
-        var hex = c.toString(16);
-        return hex.length == 1 ? "0" + hex : hex;
-      }
-      
-      function rgbToHex(r, g, b) {
-        return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-      }
-      
-      hex.innerHTML = rgbToHex
+btnConvert.addEventListener('click',() => {
+    let rc= parseInt(r.value) 
+    let gc= parseInt(g.value)
+    let bc= parseInt(b.value)
+    let answer = rc.toString(16) + gc.toString(16) + bc.toString(16)
+    hex.innerHTML = '#' + answer
 })
