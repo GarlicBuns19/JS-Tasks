@@ -15,6 +15,15 @@ btnaddNum.addEventListener('click', () => {
     numsToCal.innerHTML += arr[i]
 })
 
+numbers.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        btnaddNum.click();
+    }
+})
+
 // Calculate Array of Numbers
 const btnCal = document.getElementById('cal')
 const answer = document.getElementById('answer');
