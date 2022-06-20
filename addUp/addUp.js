@@ -29,9 +29,9 @@ const btnCal = document.getElementById('cal')
 const answer = document.getElementById('answer');
 
 btnCal.addEventListener('click', (sum) => {
-    sum = 0; 
-    for (let i = 0; i < arr.length; i++) { 
-        sum += arr[i]; 
+    sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
     }
     answer.innerHTML = sum
 })
